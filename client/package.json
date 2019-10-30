@@ -1,6 +1,8 @@
 {
   "name": "hotel_bookings",
   "version": "0.1.0",
+  "engines": {
+  "node": "12.10.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
