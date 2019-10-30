@@ -6,6 +6,7 @@ export default {
     .then(res => res.json())
   },
   postBooking(payload){
+    console.log(payload);
     return fetch(baseURL, {
       method: 'POST',
       body: JSON.stringify(payload),

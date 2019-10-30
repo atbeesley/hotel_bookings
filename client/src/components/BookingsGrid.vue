@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="booking-wrapper">
-    <booking-card v-for="(booking, index) in bookings" :key="index" :booking="booking" />
+    <bookings-card v-for="(booking, index) in bookings" :key="index" :booking="booking" />
   </div>
 </template>
 
@@ -36,4 +36,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+.booking-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 </style>
