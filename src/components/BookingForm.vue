@@ -27,6 +27,18 @@ export default {
       email: "",
       checkedIn: null
     }
+  },
+  methods: {
+    addBooking(e){
+      e.preventDefault()
+      const booking = {
+        name: this.name,
+        email: this.email,
+        chackedIn: this.checkedIn
+      }
+      BookingsService.postBooking(booking)
+      .then(res => eventBus.$emit('booking-added', res))
+    }
   }
 }
 </script>

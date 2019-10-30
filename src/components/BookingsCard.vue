@@ -15,6 +15,7 @@ import BookingsService from '@/services/BookingsService.js'
 export default {
   name: 'booking-card',
   props: ['booking'],
+  
   methods: {
     deleteBooking(){
       BookingsService.deleteBooking(this.booking._id)

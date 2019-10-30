@@ -7,7 +7,7 @@
 
 <script>
 import BookingForm from './components/BookingForm.vue'
-import BokkingsGrid from './components/BookingsGrid.vue'
+import BookingsGrid from './components/BookingsGrid.vue'
 
 export default {
   name: 'app',
